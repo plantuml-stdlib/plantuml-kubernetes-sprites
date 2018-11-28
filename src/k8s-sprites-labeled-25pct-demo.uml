@@ -1,5 +1,6 @@
 @startuml
 title Labeled k8s sprites
+!include ../resource/k8s-skinparam.iuml
 !include ../resource/k8s-sprites-labeled-25pct.iuml
 package "Control plane" {
   component "<$sched>\nsched" as sched

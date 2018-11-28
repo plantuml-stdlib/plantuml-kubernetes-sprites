@@ -1,10 +1,3 @@
 skinparam component {
-	borderColor Black
-	backgroundColor White
+  fontColor MediumBlue
 }
-
-skinparam node {
-	borderColor Black
-	backgroundColor White
-}
-skinparam databaseBackgroundColor Aqua
