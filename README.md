@@ -2,7 +2,7 @@
 
 These sprites have been generated using the PlantUML `encodesprite` command. [http://plantuml.com/sprite](http://plantuml.com/sprite)
 
-The source of the images is the kubernetes-icons repository at [https://github.com/octo-technology/kubernetes-icons](https://github.com/octo-technology/kubernetes-icons)
+The source of the images is the kubernetes-icons repository at [https://github.com/octo-technology/kubernetes-icons](https://github.com/octo-technology/kubernetes-icons). This repository inherits the Apache license from there. See LICENSE.
 
 ## Example
 
