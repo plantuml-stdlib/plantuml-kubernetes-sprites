@@ -14,9 +14,9 @@ package "Infrastructure" {
 
 ## Unlabeled - 25%
 
-![Unlabeled 25% kubernetes k8s plantuml sprite icons](/out/k8s-sprites-unlabeled-25pct.png?raw=true)
+![Unlabeled 25% kubernetes k8s plantuml sprite icons](/out/k8s-sprites-unlabeled-25pct-demo.png?raw=true)
 
 ## Labeled - 25%
 
-![Labeled 25% kubernetes k8s plantuml sprite icons](/out/k8s-sprites-labeled-25pct.png?raw=true)
+![Labeled 25% kubernetes k8s plantuml sprite icons](/out/k8s-sprites-labeled-25pct-demo.png?raw=true)
 
