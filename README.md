@@ -1,5 +1,9 @@
 # Kubernetes sprite resources for PlantUML
 
+These sprites have been generated using the PlantUML `encodesprite` command. [http://plantuml.com/sprite](http://plantuml.com/sprite)
+
+The source of the images is the kubernetes-icons repository at [https://github.com/octo-technology/kubernetes-icons](https://github.com/octo-technology/kubernetes-icons)
+
 ## Example
 
 ```uml
