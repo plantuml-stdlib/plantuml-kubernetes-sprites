@@ -1,44 +1,41 @@
 @startuml
 title Unlabeled k8s sprites
 !include ../resource/k8s-sprites-unlabeled-25pct.iuml
-package "Control plane" {
-}
 package "Infrastructure" {
-component "master <$master>" as master
-component "etcd <$etcd>" as etcd
-component "node <$node>" as node
+  component "<$master>\nmaster" as master
+  component "<$etcd>\netcd" as etcd
+  component "<$node>\nnode" as node
 }
 package "Kubernetes resources" {
-component "group <$group>" as group
-component "sa <$sa>" as sa
-component "user <$user>" as user
-component "pv <$pv>" as pv
-component "job <$job>" as job
-component "pod <$pod>" as pod
-component "crb <$crb>" as crb
-component "sts <$sts>" as sts
-component "ing <$ing>" as ing
-component "role <$role>" as role
-component "cm <$cm>" as cm
-component "netpol <$netpol>" as netpol
-component "ns <$ns>" as ns
-component "secret <$secret>" as secret
-component "quota <$quota>" as quota
-component "rb <$rb>" as rb
-component "ep <$ep>" as ep
-component "pvc <$pvc>" as pvc
-component "c_role <$c_role>" as c_role
-component "cronjob <$cronjob>" as cronjob
-component "ds <$ds>" as ds
-component "sc <$sc>" as sc
-component "svc <$svc>" as svc
-component "deploy <$deploy>" as deploy
-component "crd <$crd>" as crd
-component "hpa <$hpa>" as hpa
-component "psp <$psp>" as psp
-component "vol <$vol>" as vol
-component "rs <$rs>" as rs
-component "limits <$limits>" as limits
+  component "<$group>\ngroup" as group
+  component "<$sa>\nsa" as sa
+  component "<$user>\nuser" as user
+  component "<$pv>\npv" as pv
+  component "<$job>\njob" as job
+  component "<$pod>\npod" as pod
+  component "<$crb>\ncrb" as crb
+  component "<$sts>\nsts" as sts
+  component "<$ing>\ning" as ing
+  component "<$role>\nrole" as role
+  component "<$cm>\ncm" as cm
+  component "<$netpol>\nnetpol" as netpol
+  component "<$ns>\nns" as ns
+  component "<$secret>\nsecret" as secret
+  component "<$quota>\nquota" as quota
+  component "<$rb>\nrb" as rb
+  component "<$ep>\nep" as ep
+  component "<$pvc>\npvc" as pvc
+  component "<$c_role>\nc_role" as c_role
+  component "<$cronjob>\ncronjob" as cronjob
+  component "<$ds>\nds" as ds
+  component "<$sc>\nsc" as sc
+  component "<$svc>\nsvc" as svc
+  component "<$deploy>\ndeploy" as deploy
+  component "<$crd>\ncrd" as crd
+  component "<$hpa>\nhpa" as hpa
+  component "<$psp>\npsp" as psp
+  component "<$vol>\nvol" as vol
+  component "<$rs>\nrs" as rs
+  component "<$limits>\nlimits" as limits
 }
-
 @enduml
