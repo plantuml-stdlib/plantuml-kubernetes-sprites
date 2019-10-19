@@ -1,7 +1,9 @@
 @startuml
 title Unlabeled k8s sprites
-!include ../resource/k8s-skinparam.iuml
-!include ../resource/k8s-sprites-unlabeled-25pct.iuml
+!define K8sPuml https://raw.githubusercontent.com/michiel/plantuml-kubernetes-sprites/master/resource
+!includeurl K8sPuml/k8s-skinparam.iuml
+!includeurl K8sPuml/k8s-sprites-unlabeled-25pct.iuml
+
 package "Infrastructure" {
   component "<$master>\nmaster" as master
   component "<$etcd>\netcd" as etcd
