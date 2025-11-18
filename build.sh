@@ -172,12 +172,13 @@ build_diagrams() {
 
         if [[ ! -e ${sPath} ]]; then
             error "$(printf "Provided path '%s' does not exist" "${sPath}")"
-            exit "${EXIT_COULD_NOT_FIND_DIRECTORY}"
+            return "${EXIT_COULD_NOT_FIND_DIRECTORY}"
         elif [[ ! -d ${sPath} ]]; then
             error "$(printf "Provided path '%s' is not a directory" "${sPath}")"
-            exit "${EXIT_NOT_CORRECT_TYPE}"
+            return "${EXIT_NOT_CORRECT_TYPE}"
         else
             realpath "${sPath}"
+            return "${EXIT_OK}"
         fi
     }
 
@@ -215,10 +216,10 @@ build_diagrams() {
         exit "${EXIT_NOT_ENOUGH_PARAMETERS}"
     fi
 
-    sInputPath="$(validatePath "${aParameters[0]}")"
+    sInputPath="$(validatePath "${aParameters[0]}")" || exit $?
     readonly sInputPath
 
-    sOutputPath="$(validatePath ${aParameters[1]})"
+    sOutputPath="$(validatePath "${aParameters[1]}")" || exit $?
     readonly sOutputPath
 
     build "${sInputPath}" "${sOutputPath}" "${sFormat}"
